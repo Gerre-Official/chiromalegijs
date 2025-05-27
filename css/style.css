@@ -37,7 +37,7 @@
 
 .hero-section {
   min-height: 60vh;
-  background: url("/afbeeldingen/home-groepsfoto.jpg") center center/cover no-repeat;
+  background: url("afbeeldingen/home-groepsfoto.jpg") center center/cover no-repeat;
   position: relative;
 }
 .hero-section::before {

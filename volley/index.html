@@ -63,71 +63,104 @@
 </nav>
 
 <main class="container my-5">
-  <div class="text-center">
-  <h1 class="mb-5 fw-bold text-white text-break display-4 display-md-2 display-lg-1" style="font-size: clamp(2rem, 5vw, 4rem);">Volleyweekend Chiro Malegijs!</h1>
-  <div class="row g-4 flex-column">
-    <!-- Card 1: Afterwork (Image left) -->
-    <div class="col-12">
-    <div class="card bg-dark bg-opacity-75 text-white h-100 flex-md-row align-items-center">
-      <div class="col-md-6 d-none d-md-block">
-      <img src="../afbeeldingen/volley/achtergrond_volley.jpg" class="img-fluid rounded-start w-100" alt="Afterwork">
-      </div>
-      <div class="card-body col-md-6 text-start">
-      <h3 class="card-title">Vrijdag: Afterwork</h3>
-      <p class="card-text">
-        Start het weekend met onze gezellige afterwork! Geniet van streekbiertjes en draai aan het rad: je drinkt wat je draait. Ontspan op het terras in onze loungehoekjes met een streekbiertje of cocktail. De volleybalterreinen staan klaar om te oefenen.
-      </p>
-      <a href="../volley/afterwork/" class="btn btn-light mt-2">Meer info</a>
-      </div>
-    </div>
-    </div>
-    <!-- Card 2: Bierpong (Image right) -->
-    <div class="col-12">
-    <div class="card bg-dark bg-opacity-75 text-white h-100 flex-md-row align-items-center flex-md-row-reverse">
-      <div class="col-md-6 d-none d-md-block">
-      <img src="../afbeeldingen/volley/bierpong.jpg" class="img-fluid rounded-end w-100" alt="Bierpong">
-      </div>
-      <div class="card-body col-md-6 text-start">
-      <h3 class="card-title">Vrijdag: Bierpong</h3>
-      <p class="card-text">
-        Doe mee aan het bierpong tornooi! Vorm een team en strijd voor de overwinning in een gezellige sfeer.
-      </p>
-      <a href="../volley/bierpong/" class="btn btn-light mt-2">Meer info</a>
+  <!-- Eyecatcher Hero Section -->
+  <section class="text-center mb-5">
+    <div class="position-relative py-5 px-3 rounded-4 shadow-lg bg-dark bg-opacity-75 border border-warning">
+      <img src="../afbeeldingen/volley/achtergrond_volley.jpg" alt="Volleyweekend sfeer" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover rounded-4 opacity-25" style="z-index:0; pointer-events:none;">
+      <div class="position-relative" style="z-index:1;">
+        <h1 class="fw-bold text-warning display-3 mb-3" style="letter-spacing: 2px; text-shadow: 0 2px 16px #000;">Volleyweekend 2025</h1>
+        <p class="lead text-white-50 fs-4 mb-3">Een onvergetelijk weekend bij <span class="fw-bold text-warning">Chiro Malegijs</span>!</p>
+        <p class="text-white-50 fs-5 mb-4">
+          Kom samen met vrienden, familie of buren genieten van sport, sfeer, muziek, lekker eten & drinken.<br>
+          <span class="fw-semibold text-warning">Iedereen welkom - jong & oud!</span>
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+          <a href="#afterwork" class="btn btn-warning text-dark fw-bold shadow-sm px-4">Afterwork</a>
+          <a href="#bierpong" class="btn btn-outline-warning text-warning fw-bold shadow-sm px-4">Bierpong</a>
+          <a href="#volleyballtornooi" class="btn btn-outline-warning text-warning fw-bold shadow-sm px-4">Volleyballtornooi</a>
+          <a href="#etenendrinken" class="btn btn-outline-warning text-warning fw-bold shadow-sm px-4">Eten &amp; drinken</a>
+          <a href="#optredens" class="btn btn-outline-warning text-warning fw-bold shadow-sm px-4">Optredens</a>
+        </div>
       </div>
     </div>
-    </div>
-    <!-- Card 3: Volleyballtornooi & Kids Corner (Image left) -->
-    <div class="col-12">
-    <div class="card bg-dark bg-opacity-75 text-white h-100 flex-md-row align-items-center">
-      <div class="col-md-6 d-none d-md-block">
-      <img src="../afbeeldingen/volley/volleyballtornooi.jpg" class="img-fluid rounded-start w-100" alt="Volleyballtornooi">
-      </div>
-      <div class="card-body col-md-6 text-start">
-      <h3 class="card-title">Zaterdag: Volleyballtornooi & Kids Corner</h3>
-      <p class="card-text">
-        Op zaterdag vindt het grote volleyballtornooi plaats. Voor de kinderen is er een leuke kids corner. Honger of dorst? Er zijn frietjes, pasta's, broodjes, hamburgers, drankjes en cocktails voorzien.
-      </p>
-      <a href="../volley/volleyballtornooi/" class="btn btn-light mt-2">Meer info</a>
-      </div>
-    </div>
-    </div>
-    <!-- Card 4: Optredens (Image right) -->
-    <div class="col-12">
-    <div class="card bg-dark bg-opacity-75 text-white h-100 flex-md-row align-items-center flex-md-row-reverse">
-      <div class="col-md-6 d-none d-md-block">
-      <img src="../afbeeldingen/volley/optredens.jpg" class="img-fluid rounded-end w-100" alt="Optredens">
-      </div>
-      <div class="card-body col-md-6 text-start">
-      <h3 class="card-title">Zaterdag: Optredens</h3>
-      <p class="card-text">
-        Geniet 's avonds van optredens: van lokale bandjes tot DJ's, tot laat in de nacht. Sfeer verzekerd!
-      </p>
-      <a href="../volley/optredens/" class="btn btn-light mt-2">Meer info</a>
+  </section>
+
+  <!-- Subpages Overview Cards -->
+  <section class="row g-4 justify-content-center">
+    <!-- Afterwork -->
+    <div class="col-md-6 col-lg-4">
+      <div id="afterwork" class="card bg-dark bg-opacity-75 border border-warning shadow h-100">
+        <img src="../afbeeldingen/volley/achtergrond_volley.jpg" class="card-img-top rounded-top" alt="Afterwork">
+        <div class="card-body">
+          <h3 class="card-title text-warning fw-bold mb-2">Afterwork</h3>
+          <p class="card-text text-white-50 mb-3">
+            Start het weekend in stijl! Gezellige loungehoekjes, streekbieren, cocktails, Rad van Drank & zomerse sfeer vanaf <b>vrijdag 16u</b>.
+          </p>
+          <a href="../volley/afterwork/" class="btn btn-warning text-dark fw-bold">Meer info</a>
+        </div>
       </div>
     </div>
+    <!-- Bierpong -->
+    <div class="col-md-6 col-lg-4">
+      <div id="bierpong" class="card bg-dark bg-opacity-75 border border-warning shadow h-100">
+        <img src="../afbeeldingen/volley/bierpong.jpg" class="card-img-top rounded-top" alt="Bierpong">
+        <div class="card-body">
+          <h3 class="card-title text-warning fw-bold mb-2">Bierpong</h3>
+          <p class="card-text text-white-50 mb-3">
+            Vorm een team en strijd mee in het legendarische bierpong tornooi. Fun verzekerd, ook voor supporters!
+          </p>
+          <a href="../volley/bierpong/" class="btn btn-warning text-dark fw-bold">Meer info</a>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
+    <!-- Volleyballtornooi -->
+    <div class="col-md-6 col-lg-4">
+      <div id="volleyballtornooi" class="card bg-dark bg-opacity-75 border border-warning shadow h-100">
+        <img src="../afbeeldingen/volley/volleyballtornooi.jpg" class="card-img-top rounded-top" alt="Volleyballtornooi">
+        <div class="card-body">
+          <h3 class="card-title text-warning fw-bold mb-2">Volleyballtornooi</h3>
+          <p class="card-text text-white-50 mb-3">
+            Zaterdag: het sportieve hoogtepunt! Schrijf je team in of kom supporteren. Voor jong & oud, met een gezellige kids corner.
+          </p>
+          <a href="../volley/volleyballtornooi/" class="btn btn-warning text-dark fw-bold">Meer info</a>
+        </div>
+      </div>
+    </div>
+    <!-- Eten & drinken -->
+    <div class="col-md-6 col-lg-4">
+      <div id="etenendrinken" class="card bg-dark bg-opacity-75 border border-warning shadow h-100">
+        <img src="../afbeeldingen/volley/eten/friet-bier.png" class="card-img-top rounded-top" alt="Eten en drinken">
+        <div class="card-body">
+          <h3 class="card-title text-warning fw-bold mb-2">Eten &amp; drinken</h3>
+          <p class="card-text text-white-50 mb-3">
+            Geniet van frietjes, pasta's, broodjes, hamburgers, snacks, streekbieren, cocktails en meer. Voor elk wat wils!
+          </p>
+          <a href="../volley/eten-en-drinken/" class="btn btn-warning text-dark fw-bold">Bekijk aanbod</a>
+        </div>
+      </div>
+    </div>
+    <!-- Optredens -->
+    <div class="col-md-6 col-lg-4">
+      <div id="optredens" class="card bg-dark bg-opacity-75 border border-warning shadow h-100">
+        <img src="../afbeeldingen/volley/optredens.jpg" class="card-img-top rounded-top" alt="Optredens">
+        <div class="card-body">
+          <h3 class="card-title text-warning fw-bold mb-2">Optredens</h3>
+          <p class="card-text text-white-50 mb-3">
+            Zaterdagavond: live bands & DJ's zorgen voor een spetterend feest tot in de vroege uurtjes. Sfeer gegarandeerd!
+          </p>
+          <a href="../volley/optredens/" class="btn btn-warning text-dark fw-bold">Line-up & info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action / Footer highlight -->
+  <section class="mt-5">
+    <div class="text-center text-white-50 fs-5 mb-0 py-3">
+      <strong>Mis het niet!</strong> Kom langs op het gezelligste volleyweekend van het jaar.<br>
+      <span class="fw-semibold">Tot dan?</span> Iedereen welkom - <span class="text-warning">Chiro Malegijs</span> kijkt ernaar uit je te zien!
+    </div>
+  </section>
 </main>
 
 <div class="container-fluid px-0">

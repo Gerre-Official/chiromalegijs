@@ -100,14 +100,8 @@
       <p>
         Heb je interesse in het huren van onze lokalen of tenten, of heb je vragen over de verhuur? Bezoek dan gerust onze <a href="../verhuur/" class="text-success fw-semibold">verhuurpagina</a> voor alle informatie en contactmogelijkheden.
       </p>
-        <!-- Contactformulier -->
-        <form action="https://formsubmit.co/8b5f309d0b14c780ea3afc7195fbf559" method="POST">
-        <!-- Anti-spam -->
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Contactformulier website">
-        <input type="hidden" name="_next" value="https://chiromalegijs.be/">
-
+      <!-- Contactformulier -->
+      <form>
         <div class="mb-3">
           <label for="naam" class="form-label">Naam</label>
           <input type="text" class="form-control" id="naam" name="naam" required>
@@ -126,7 +120,6 @@
         </div>
         <button type="submit" class="btn btn-success">Verzenden</button>
       </form>
-
     </div>
 
 
@@ -238,25 +231,6 @@
     </div>
   </footer>
 </div>
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $('#contactForm').on('submit', function(e) {
-    e.preventDefault(); // voorkom herladen
-    $.ajax({
-      url: 'contact.php',
-      type: 'POST',
-      data: $(this).serialize(),
-      success: function(response) {
-        $('#formMessage').html(response);
-      },
-      error: function() {
-        $('#formMessage').html('❌ Er is iets misgegaan bij het verzenden.');
-      }
-    });
-  });
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
